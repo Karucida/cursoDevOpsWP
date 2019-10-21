@@ -9,5 +9,6 @@ RUN apt-get update && \
         curl -s   https://wordpress.org/latest.tar.gz | tar -C /var/www/html/ -zx --strip-components=1 && \
         rm -rf /var/lib/apt/archives /var/cache/apt/archives && \
         chown -R www-data: /var/www/html
+        #Segundaversion
 EXPOSE 80
 ENTRYPOINT ["/usr/sbin/apachectl", "-D", "FOREGROUND"] 
